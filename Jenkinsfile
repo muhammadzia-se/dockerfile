@@ -35,9 +35,9 @@ node {
 //                 echo "Trying to Push Docker Build to DockerHub"
 //     }
 	stage('Stop Container'){
-	  sh "docker rm -f firstPipeLineContainer || true"
+	  sh "docker rm -f mani || true"
 	}
 	stage('Run Container'){
-	 sh "docker run -d --name firstPipeLineContainer -p 3000:8000 mzia87/nodeapp"
+	 sh "docker run -d --name mani -p 8000:8080 mzia87/nodeapp"
 	}
 }
