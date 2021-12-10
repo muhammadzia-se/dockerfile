@@ -38,6 +38,6 @@ node {
 	  sh "docker rm -f mani || true"
 	}
 	stage('Run Container'){
-	 sh "docker run -d --name mani -p 8000:8080 mzia87/nodeapp"
+	 sh "docker run -d --name mani -p 3000:3000 mzia87/nodeapp"
 	}
 }
